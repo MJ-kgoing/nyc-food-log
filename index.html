@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYC FOOD LOG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=excel-import" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">MJ's</p>
+        <h1>NYC FOOD LOG</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls" aria-label="Filters">
+        <label class="control">
+          <span>Search</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Try: ramen, brooklyn, cocktail..."
+          />
+        </label>
+
+        <label class="control">
+          <span>Category</span>
+          <select id="typeFilter">
+            <option value="all">All</option>
+            <option value="restaurant">Restaurants</option>
+            <option value="bar">Bars</option>
+            <option value="other">Others</option>
+          </select>
+        </label>
+
+        <label class="control">
+          <span>Neighborhood</span>
+          <select id="neighborhoodFilter">
+            <option value="all">All neighborhoods</option>
+          </select>
+        </label>
+      </section>
+
+      <nav
+        class="cuisine-tabs"
+        id="cuisineTabs"
+        aria-label="Filter by cuisine"
+      ></nav>
+
+      <section class="stats" id="stats" aria-live="polite"></section>
+      <section id="cards" class="cards" aria-live="polite"></section>
+    </main>
+
+    <div class="photo-modal" id="photoModal" aria-hidden="true">
+      <button class="photo-modal__backdrop" type="button" aria-label="Close photo"></button>
+      <figure class="photo-modal__content">
+        <button class="photo-modal__close" type="button" aria-label="Close photo">×</button>
+        <button class="photo-modal__nav photo-modal__nav--prev" type="button" aria-label="Previous photo">‹</button>
+        <img id="photoModalImage" src="" alt="" />
+        <button class="photo-modal__nav photo-modal__nav--next" type="button" aria-label="Next photo">›</button>
+        <figcaption id="photoModalCaption"></figcaption>
+        <div class="photo-modal__thumbs" id="photoModalThumbs" aria-label="Photo thumbnails"></div>
+      </figure>
+    </div>
+
+    <script src="./script.js?v=excel-import"></script>
+  </body>
+</html>
