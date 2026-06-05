@@ -165,29 +165,6 @@ const places = [
     ]
   },
   {
-    "name": "Chi",
-    "type": "restaurant",
-    "cuisine": "Chinese",
-    "borough": "",
-    "neighborhood": "Midtown West",
-    "price": "40+",
-    "needsReservation": true,
-    "recommendedDishes": [
-      {
-        "dish": "金字塔之谜（东坡肉塔）",
-        "note": ""
-      },
-      {
-        "dish": "干锅包菜",
-        "note": ""
-      },
-      {
-        "dish": "茄子",
-        "note": ""
-      }
-    ]
-  },
-  {
     "name": "Katsu-Hama",
     "type": "restaurant",
     "cuisine": "Japanese",
